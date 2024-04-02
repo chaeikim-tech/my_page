@@ -5,7 +5,6 @@ import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import { BrowserRouter } from 'react-router-dom';
 
 const GlobalStyle = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -22,7 +21,7 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 65%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -72,14 +71,26 @@ a {
   background-color: yellow;
   color: #333;
 }
+
+::-webkit-scrollbar{
+  width: 1.4rem;  
+}
+
+::-webkit-scrollbar-track{
+    background-color:#222;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color:yellow; 
+}
 `;
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <GlobalStyle />
     <BrowserRouter>
-      <GlobalStyle />
       <App />
     </BrowserRouter>
   </React.StrictMode>
