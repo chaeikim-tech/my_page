@@ -1,8 +1,19 @@
 import React from 'react';
+import { styled } from 'styled-components';
+
+
+const Wrapper = styled.div`
+    height: 100vh;
+    background: darkgreen;
+    color: white;
+`;
+
+
+
 
 function Home() {
     return (
-        <h1>Home!</h1>
+        <Wrapper id='home'>Home!</Wrapper>
     )
 }
 

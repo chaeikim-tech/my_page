@@ -60,7 +60,9 @@ body {
   font-weight: 300;
   font-family: 'Source Sans Pro', sans-serif;
   line-height: 1.2;
-  background-color: #333;
+  background-color: #111;
+  color: #fff;
+  padding-left: 35rem;
 }
 a {
   text-decoration:none;
@@ -72,15 +74,15 @@ a {
   color: #333;
 }
 
-::-webkit-scrollbar{
+html::-webkit-scrollbar{
   width: 1.4rem;  
 }
 
-::-webkit-scrollbar-track{
+html::-webkit-scrollbar-track{
     background-color:#222;
 }
 
-::-webkit-scrollbar-thumb{
+html::-webkit-scrollbar-thumb{
   background-color:yellow; 
 }
 `;

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
 const Wrapper = styled.div`
     position: fixed;
@@ -12,7 +12,7 @@ const Wrapper = styled.div`
     background: #1a1a1a;
     display: flex;
     align-items: center;
-    justify-center: center;
+    justify-content: center;
     flex-flow: column;
     text-align: center;    
 `;
@@ -74,11 +74,11 @@ const Header = () => {
             </User>
             <Nav>
                 <ul>
-                    <li><StyledLink to="/">Home</StyledLink></li>
-                    <li><StyledLink to="/about">About</StyledLink></li>
-                    <li><StyledLink to="/edu">Education</StyledLink></li>
-                    <li><StyledLink to="/portfolio">portfolio</StyledLink></li>
-                    <li><StyledLink to="/contact">contact</StyledLink></li>
+                    <li><StyledLink to="home" spy={true} smooth={true}  duration={500}>Home</StyledLink></li>
+                    <li><StyledLink to="about" spy={true} smooth={true} duration={500}>About</StyledLink></li>
+                    <li><StyledLink to="edu" spy={true} smooth={true} duration={500}>Education</StyledLink></li>
+                    <li><StyledLink to="portfolio" spy={true} smooth={true} duration={500}>portfolio</StyledLink></li>
+                    <li><StyledLink to="contact" spy={true} smooth={true} duration={500}>contact</StyledLink></li>
                 </ul>
             </Nav>
         </Wrapper>
