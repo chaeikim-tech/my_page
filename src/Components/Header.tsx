@@ -27,8 +27,8 @@ const Name = styled.h3`
 `;
 
 const ProfileImg = styled.img`
-    height: 17rem;
-    width: 17rem;
+    height: 15rem;
+    width: 15rem;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
@@ -57,10 +57,19 @@ const StyledLink = styled(Link)`
     color: #fff;
     font-size: 2rem;
     border-radius: 5rem;
+    
     &:hover {
         background: yellow;
         color: #333;
+        cursor: pointer;
     }
+
+    &.active {
+            background: yellow;
+            color: #333
+        }
+    
+
 `
 
 
