@@ -8,13 +8,17 @@ const Wrapper = styled.div`
     left: 0;
     z-index: 1000;
     height: 100%;
-    width: 35rem;
+    width: 32rem;
     background: #1a1a1a;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: column;
-    text-align: center;    
+    text-align: center;  
+    @media only screen and (max-width: 1200px){
+        left: -150%;
+    }
+  
 `;
 
 const User = styled.div`

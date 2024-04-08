@@ -34,9 +34,6 @@ footer, header, hgroup, main, menu, nav, section {
 *[hidden] {
     display: none;
 }
-body {
-  line-height: 1;
-}
 menu, ol, ul {
   list-style: none;
 }
@@ -62,7 +59,11 @@ body {
   line-height: 1.2;
   background-color: #111;
   color: #fff;
-  padding-left: 35rem;
+  padding-left: 32rem;
+  overflow-x:hidden;
+  @media only screen and (max-width: 1200px){
+        padding-left: 2rem;
+    }
 }
 a {
   text-decoration:none;
@@ -85,6 +86,7 @@ html::-webkit-scrollbar-track{
 html::-webkit-scrollbar-thumb{
   background-color:yellow; 
 }
+
 `;
 
 
