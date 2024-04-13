@@ -52,6 +52,8 @@ table {
 * {
   box-sizing: border-box;
   transition: all .2s linear;
+  text-transform: capitalize;
+  scroll-behavior: smooth;
 }
 body {
   font-weight: 300;
