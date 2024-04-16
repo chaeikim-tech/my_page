@@ -1,11 +1,10 @@
 import styled from 'styled-components';
-import About from './Components/About.tsx';
-import Contact from './Components/Contact.tsx';
-import Edu from './Components/Edu.tsx';
-import Header from './Components/Header.tsx';
-import Home from './Components/Home.tsx';
-import Portfolio from './Components/Portfolio.tsx';
-import MenuBar from './Components/MenuBar.tsx';
+import About from './Components/About.jsx';
+import Contact from './Components/Contact.jsx';
+import Header from './Components/Header.jsx';
+import Home from './Components/Home.jsx';
+import Portfolio from './Components/Portfolio.jsx';
+import MenuBar from './Components/MenuBar.jsx';
 import ScrollToTop from './Components/ScrollToTop.jsx';
 
 
@@ -18,7 +17,6 @@ function App() {
       <Header />
       <Home />
       <About />
-      <Edu />
       <Portfolio />
       <Contact />
     </>

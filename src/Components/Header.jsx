@@ -89,7 +89,6 @@ const Header = () => {
                 <ul>
                     <li><StyledLink to="home" spy={true} smooth={true}  duration={500}>Home</StyledLink></li>
                     <li><StyledLink to="about" spy={true} smooth={true} duration={500}>About</StyledLink></li>
-                    <li><StyledLink to="edu" spy={true} smooth={true} duration={500}>Education</StyledLink></li>
                     <li><StyledLink to="portfolio" spy={true} smooth={true} duration={500}>portfolio</StyledLink></li>
                     <li><StyledLink to="contact" spy={true} smooth={true} duration={500}>contact</StyledLink></li>
                 </ul>
