@@ -8,7 +8,6 @@ import MenuBar from './Components/MenuBar.jsx';
 import ScrollToTop from './Components/ScrollToTop.jsx';
 
 
-
 function App() {
   return (
     <>
