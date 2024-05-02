@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-scroll';
+import myImg from '../Img/myImg.png';
 
 const Wrapper = styled.div`
     position: fixed;
@@ -81,13 +82,13 @@ const Header = () => {
     return (
         <Wrapper>
             <User>
-                <ProfileImg />
+                <ProfileImg src={myImg} />
                 <Name>Chaei Kim</Name>
                 <JobTitle>front end developer</JobTitle>
             </User>
             <Nav>
                 <ul>
-                    <li><StyledLink to="home" spy={true} smooth={true}  duration={500}>Home</StyledLink></li>
+                    <li><StyledLink to="home" spy={true} smooth={true} duration={500}>Home</StyledLink></li>
                     <li><StyledLink to="about" spy={true} smooth={true} duration={500}>About</StyledLink></li>
                     <li><StyledLink to="portfolio" spy={true} smooth={true} duration={500}>portfolio</StyledLink></li>
                     <li><StyledLink to="contact" spy={true} smooth={true} duration={500}>contact</StyledLink></li>

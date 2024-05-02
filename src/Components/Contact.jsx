@@ -9,16 +9,19 @@ import emailjs from '@emailjs/browser';
 
 const Wrapper = styled.div`
     height: 100vh;
-    display:flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap; 
 `;
 
 const ConatactTitle = styled.h1`
-    color:yellow;
-    font-size: 2.9rem;
+    color: white;
+    text-align: center;
+    margin: 0 6rem;
+    font-size: 3rem;
     font-weight: bold;
+    padding: 2rem 0;
+    border-bottom: 0.1rem solid #fff4;
 `
 
 const ContactRow = styled.div`
@@ -67,12 +70,12 @@ const EmailForm = styled.form`
         text-transform: none;
         font-size: 1.7rem;
         width:100%;
+        border: 0.1rem solid #fff4;
 
     }
     textarea{
         height: 15rem;
         resize:none;
-        border: none;
     }
 `
 const Button = styled.button`
@@ -96,7 +99,7 @@ const Button = styled.button`
 
 
 const Contact = () => {
-    
+
     const form = useRef();
 
 

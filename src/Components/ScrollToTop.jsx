@@ -21,6 +21,7 @@ const Wrapper = styled.div`
     align-items: center;
     transition: 0.4s ease-in-out;
     z-index: 1;
+    cursor: pointer;
     svg {
       color: black;
       font-size: 1.3rem;
