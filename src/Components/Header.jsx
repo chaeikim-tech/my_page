@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-scroll';
-import myImg from '../Img/myImg.png';
+import myImg from '../Img/myImg.jpg';
 
 const Wrapper = styled.div`
     position: fixed;
