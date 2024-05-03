@@ -35,6 +35,13 @@ const MiniBox = styled.div`
         color: yellow;
         margin-bottom: 1rem;
     }
+    span {
+        font-size: 1.2rem;
+        background-color: #222;
+        color: #fff;
+        border-radius: 5rem;
+        padding: 0.5rem 2.5rem
+    }
     h5{
         font-size: 1.5rem ;
         color: white;
@@ -56,6 +63,7 @@ function Portfolio() {
             <PortBox>
                 <MiniBox>
                     <div>Trello Clone</div>
+                    <span>https://trello-clone-two-sigma.vercel.app/</span>
                     <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
                     <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
                     <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />

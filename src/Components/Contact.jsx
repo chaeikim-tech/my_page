@@ -5,8 +5,6 @@ import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 import emailjs from '@emailjs/browser';
 
 
-
-
 const Wrapper = styled.div`
     height: 100vh;
     align-items: center;
