@@ -14,6 +14,7 @@ const AboutTitle = styled.h1`
     color: white;
     text-align: center;
     margin: 0 6rem;
+    letter-spacing: .2rem;
     font-size: 3rem;
     font-weight: bold;
     padding: 2rem 0;

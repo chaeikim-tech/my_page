@@ -15,6 +15,7 @@ const Wrapper = styled.div`
 const ConatactTitle = styled.h1`
     color: white;
     text-align: center;
+    letter-spacing: .2rem;
     margin: 0 6rem;
     font-size: 3rem;
     font-weight: bold;

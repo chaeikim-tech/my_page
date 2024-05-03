@@ -1,6 +1,6 @@
 import React from 'react';
 import { styled } from 'styled-components';
-import { ReactTyped } from 'react-typed';
+import { Link } from 'react-scroll';
 import { FaUser } from "react-icons/fa";
 
 
@@ -11,11 +11,13 @@ const Wrapper = styled.div`
     flex-flow: column;
     min-height: 100vh;
     padding: 1rem;
+    letter-spacing: .15rem;
     `;
 
 const Hello = styled.h3`
     font-size: 2.5rem;
     color:#fff;
+    margin-bottom: 1.5rem ;
 `;
 
 const Name = styled.h2`
@@ -29,7 +31,7 @@ const Contents = styled.div`
 `
 
 
-const AboutButton = styled.button`
+const AboutButton = styled(Link)`
     padding: .6rem 3rem 1rem 3rem;
     background:#333;
     color:#fff;
@@ -38,7 +40,7 @@ const AboutButton = styled.button`
     font-size: 1rem;
     border-radius: 5rem;
     &:hover{
-        background: #FDA403;
+        background: yellow;
         color:#333;
     }
     svg{
@@ -52,11 +54,9 @@ function Home() {
     return (
         <Wrapper id='home'>
             <Hello>안녕하세요.</Hello>
+            <Contents>끊임없는 호기심으로 새로운 지식의 탐험을 즐기는</Contents>
             <Name>Fontend Developer 김채이 입니다.</Name>
-            <Contents>새로운 지식을 습득하는 과정을 즐기고 있습니다.</Contents>
-            <Contents>이것들은 단순히 목표를 달성하는 수단이 아닌</Contents>
-            <Contents>삶의 풍요로움과 만족감을 높여준다고 생각하고있습니다.</Contents>
-            <AboutButton>About Me<FaUser /></AboutButton>
+            <AboutButton to="about" spy={true} smooth={true} duration={500}>About Me<FaUser /></AboutButton>
         </Wrapper>
     )
 }
