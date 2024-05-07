@@ -17,7 +17,7 @@ const Wrapper = styled.div`
     flex-flow: column;
     text-align: center;  
     @media only screen and (max-width: 1200px){
-        left: -150%;
+         transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
     }
   
 `;
@@ -78,9 +78,9 @@ const StyledLink = styled(Link)`
 `
 
 
-const Header = () => {
+const Header = ({ open }) => {
     return (
-        <Wrapper>
+        <Wrapper open={open}>
             <User>
                 <ProfileImg src={myImg} />
                 <Name>Chaei Kim</Name>
