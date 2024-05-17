@@ -1,5 +1,3 @@
-import { useState } from 'react';
-import styled from 'styled-components';
 import About from './Components/About.jsx';
 import Contact from './Components/Contact.jsx';
 import Header from './Components/Header.jsx';
