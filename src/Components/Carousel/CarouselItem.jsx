@@ -22,7 +22,7 @@ const Button = styled.button`
 `
 
 
-function CarouselItems() {
+function CarouselItem() {
     const [activeItemIndex, setActiveItemIndex] = useState(0);
     const chevronWidth = 40;
     return (
@@ -53,4 +53,4 @@ function CarouselItems() {
     );
 };
 
-export default CarouselItems;
+export default CarouselItem;
