@@ -1,6 +1,6 @@
 import React from 'react';
 import { styled } from 'styled-components';
-import CarouselItems from './CarouselItem/CarouselItems.jsx';
+import CarouselItem from './Carousel/CarouselItem.jsx';
 
 const Wrapper = styled.div`
     height: 100vh;
@@ -33,7 +33,7 @@ function Portfolio() {
         <Wrapper id='portfolio'>
             <PortTitle>Portfolio</PortTitle>
             <PortBox>
-                <CarouselItems />
+                <CarouselItem />
             </PortBox>
         </Wrapper>
     )
