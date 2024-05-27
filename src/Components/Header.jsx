@@ -9,7 +9,7 @@ const Wrapper = styled.div`
     left: 0;
     z-index: 1000;
     height: 100%;
-    width: 32rem;
+    width: 25rem;
     background: #1a1a1a;
     display: flex;
     align-items: center;
@@ -27,21 +27,21 @@ const User = styled.div`
 `;
 
 const Name = styled.h3`
-    font-size: 3.5rem;
+    font-size: 3rem;
     color:#fff;
 `;
 
 const ProfileImg = styled.img`
-    height: 15rem;
-    width: 15rem;
+    height: 12rem;
+    width: 12rem;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 1rem;
+    margin: 1rem;
     border: .7rem solid yellow;
 `;
 
 const JobTitle = styled.p`
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #fff;
 `;
 
@@ -60,7 +60,7 @@ const StyledLink = styled(Link)`
     margin: 1.5rem 0;
     background: #333;
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.5rem;
     border-radius: 5rem;
     
     &:hover {
