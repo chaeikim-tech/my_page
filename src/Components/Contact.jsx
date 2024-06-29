@@ -6,74 +6,76 @@ import emailjs from '@emailjs/browser';
 
 
 const Wrapper = styled.div`
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap; 
-`;
-
-const ConatactTitle = styled.h1`
-    color: white;
-    text-align: center;
-    letter-spacing: .2rem;
-    margin: 0 6rem;
-    font-size: 3rem;
-    font-weight: bold;
-    padding: 2rem 0;
-    border-bottom: 0.1rem solid #fff4;
-`
-
-const ContactRow = styled.div`
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 25px auto;
+    height: 75vh;
+    @media (max-width: 700px) {
+        display: block;
+    }
+`;
+
+
+const ContactRow = styled.div`
+    flex-basis: 48%;
+    @media (max-width: 700px) {
+        padding: 20px;
+    }
 `;
 
 const ContactBox = styled.div`
-    flex: 1 1 30rem;
-    padding: 4rem;
-    padding-bottom: 0;
-
+    padding: 10px;
+    margin-left: 20px;
 `
 
 const InfoTitle = styled.h3`
-    font-size: 3rem;
-    padding-bottom: 2rem;
+    font-size: 35px;
+    font-weight: 500;
+    padding-bottom: 12px;
+    @media (max-width: 700px) {
+        font-size: 20px;
+    }
 `
 
 const Info = styled.div`
     h3{
         display: flex;
         align-items: center;
-        font-size: 1.6rem;
-        padding: 1rem 0;
+        font-size: 25px;
+        padding: 7px 0;
         text-transform: lowercase;
         svg {
-           padding-right: 0.7rem;
+           padding-right: 10px;
            color: yellow; 
         }
+    @media (max-width: 700px) {
+        font-size: 18px;
     }
+    }
+    
 `
 
 const EmailForm = styled.form`
     flex: 1 1 45rem;
-    padding: 2rem;
-    margin: 2rem;
-    margin-bottom: 4rem;
+    padding: 15px;
+    margin: 15px;
+    margin-bottom: 50px;
     input,textarea{
-        padding: 1rem;
-        margin: 1rem 0;
+        display: block;
+        width:100%;
+        padding: 15px;
+        margin: 10px 0;
         background: #3333;
         color: #fff;
         text-transform: none;
-        font-size: 1.7rem;
-        width:100%;
-        border: 0.1rem solid #fff4;
+        font-size: 15px;
+        resize:none;
+        border: 2px solid #fff4;
 
     }
     textarea{
-        height: 15rem;
+        height: 200px;
         resize:none;
     }
 `
@@ -86,19 +88,20 @@ const Button = styled.button`
     padding: 10px 15px;
     text-align: center;
     transition: 200ms;
-    width: 12%;
+    width: 40%;
     box-sizing: border-box;
     border: 0;
     font-size: 16px;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-
+    @media (max-width: 700px) {
+        font-size: 12px;
+    }
 `
 
 
 const Contact = () => {
-
     const form = useRef();
 
 
@@ -125,7 +128,6 @@ const Contact = () => {
 
     return (
         <Wrapper id='contact'>
-            <ConatactTitle>Contact me</ConatactTitle>
             <ContactRow>
                 <ContactBox>
                     <InfoTitle>contact info</InfoTitle>
@@ -135,6 +137,8 @@ const Contact = () => {
                         <h3><FaMapMarkerAlt />경기도 안산시 단원구</h3>
                     </Info>
                 </ContactBox>
+            </ContactRow>
+            <ContactRow>
                 <EmailForm ref={form} onSubmit={sendEmail}>
                     <input type='text' name='from_name' required placeholder='Name' />
                     <input type='email' name='email' required placeholder='Email' />

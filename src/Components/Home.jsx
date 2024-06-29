@@ -10,42 +10,52 @@ const Wrapper = styled.div`
     justify-content:center;
     flex-flow: column;
     min-height: 100vh;
-    padding: 1rem;
-    letter-spacing: .15rem;
+    padding: 10px;
+    letter-spacing: 2px;
     `;
 
 const Hello = styled.h3`
-    font-size: 2.5rem;
+    font-size: 40px;
+    font-weight: 500;
     color:#fff;
-    margin-bottom: 1.5rem ;
+    margin-bottom: 15px ;
+    @media (max-width: 700px) {
+        font-size: 25px;
+    }
 `;
 
 const Name = styled.h2`
-    font-size: 2rem;
+    font-size: 30px;
     color:#fff;
+    @media (max-width: 700px) {
+        font-size: 20px;
+    }
 `;
 
 const Contents = styled.div`
-    font-size: 1.8rem;
+    font-size: 28px;
     color:#fff;
+    @media (max-width: 700px) {
+        font-size: 17px;
+    }
 `
 
 
 const AboutButton = styled(Link)`
-    padding: .6rem 3rem 1rem 3rem;
+    padding: 10px 25px 15px 25px;
     background:#333;
     color:#fff;
     cursor: pointer;
-    margin-top: 1rem;
-    font-size: 1rem;
-    border-radius: 5rem;
+    margin-top: 10px;
+    font-size: 15px;
+    border-radius: 50px;
     &:hover{
         background: yellow;
         color:#333;
     }
     svg{
-        padding: 0rem 0.2rem;
-        font-size: 1.3rem;
+        padding: 0px 3px;
+        font-size: 20px;
     }
 `;
 
@@ -56,7 +66,7 @@ function Home() {
             <Hello>안녕하세요.</Hello>
             <Contents>끊임없는 호기심으로 새로운 지식의 탐험을 즐기는</Contents>
             <Name>Fontend Developer 김채이 입니다.</Name>
-            <AboutButton to="about" spy={true} smooth={true} duration={500}>About Me<FaUser /></AboutButton>
+            <AboutButton to="about" spy={true} smooth={true} offset={-150} duration={500}>About Me<FaUser /></AboutButton>
         </Wrapper>
     )
 }

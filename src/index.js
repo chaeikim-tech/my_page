@@ -62,10 +62,10 @@ body {
   line-height: 1.2;
   background-color: #111;
   color: #fff;
-  padding-left: 32rem;
+  padding-left: 400px;
   overflow-x:hidden;
   @media only screen and (max-width: 1200px){
-        padding-left: 2rem;
+        padding-left: 32px;
     }
 }
 a {

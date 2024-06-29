@@ -27,7 +27,28 @@ function CarouselItem() {
     const chevronWidth = 40;
     return (
         <Wrapper style={{ padding: `0 ${chevronWidth}px` }}>
-
+            <ItemsCarousel
+                requestToChangeActive={setActiveItemIndex}
+                activeItemIndex={activeItemIndex}
+                numberOfCards={1}
+                gutter={20}
+                rightChevron={
+                    <Button type="button">
+                        <FaCircleChevronRight />
+                    </Button>
+                }
+                leftChevron={
+                    <Button type="button">
+                        <FaCircleChevronLeft />
+                    </Button>
+                }
+                outsideChevron
+                chevronWidth={chevronWidth}
+            >
+                <Card />
+                <Card />
+                <Card />
+            </ItemsCarousel>
         </Wrapper>
     );
 };

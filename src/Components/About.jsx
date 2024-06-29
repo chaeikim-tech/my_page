@@ -4,66 +4,76 @@ import { MdBusinessCenter } from "react-icons/md";
 
 
 const Wrapper = styled.div`
-    height: 100vh;
+    height: 90vh;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap; 
 `;
 
-const AboutTitle = styled.h1`
-    color: white;
-    text-align: center;
-    margin: 0 6rem;
-    letter-spacing: .2rem;
-    font-size: 3rem;
-    font-weight: bold;
-    padding: 2rem 0;
-    border-bottom: 0.1rem solid #fff4;
-`
 
 const CareerBox = styled.div`
     display: flex;
     justify-content: center;
-    padding: 3rem 0 0 3rem;
-    flex-wrap: wrap;
+    padding: 10px 0 0 10px;
+    @media (max-width: 650px) {
+        flex-direction: column;
+    }
 `
 
 const MiniBox = styled.div`
-    width: 35rem;
-    margin: 4rem 1rem;
-    padding-left: 4rem;
-    border-left: 0.2rem solid #fff;
+    width: 300px;
+    margin: 40px;
+    padding-left: 40px;
+    border-left: 5px solid #fff;
     position: relative;
     span {
-        font-size: 1.2rem;
+        font-size: 20px;
         background-color: #222;
         color: #fff;
-        border-radius: 5rem;
-        padding: 0.5rem 2.5rem
+        border-radius: 50px;
+        padding: 10px 30px;
+        @media (max-width: 700px) {
+        font-size: 15px;
+        padding: 10px 25px;
+    }   
     }
     h3{
-        font-size: 2rem ;
+        font-size: 30px ;
         color: #fff;
-        padding-top:1.5rem;
+        padding-top: 15px;
+        @media (max-width: 700px) {
+        font-size: 20px;
+        }   
     }
     p{
-        font-size: 1.4rem;
+        font-size: 18px;
         color: #eee;
-        padding: 1rem 0;
+        padding: 20px 0;
+        @media (max-width: 700px) {
+        font-size: 14px;
+        }   
     }
     .icon{
         position: absolute;
-        top:-1.5rem;
-        left: -2.5rem;
-        height: 4.5rem;
-        width: 4.5rem;
-        padding: 1rem;
+        top:-15px;
+        left: -25px;
+        height: 50px;
+        width: 50px;
+        padding: 10px;
         border-radius: 50%;
-        line-height: 5rem;
+        line-height: 30px;
         text-align: center;
         color: #fff;
         background-color: #FDA403;
+        @media (max-width: 700px) {
+        height: 45px;
+        width: 45px;
+        }
     }
+    @media (max-width: 700px) {
+        flex-basis: 100%;
+        margin: 40px;
+    }   
 `
 
 
@@ -71,7 +81,6 @@ const MiniBox = styled.div`
 function About() {
     return (
         <Wrapper id='about'>
-            <AboutTitle>Career</AboutTitle>
             <CareerBox>
                 <MiniBox>
                     <MdBusinessCenter className='icon' />

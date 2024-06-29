@@ -1,18 +1,19 @@
 import styled from 'styled-components';
+import { GiHamburgerMenu } from "react-icons/gi";
 import { ImMenu } from "react-icons/im";
-import React from 'react';
+import React, { useState } from 'react';
 
 
 
 const Wrapper = styled(ImMenu)`
     position: fixed;
-    top: 2rem;
-    right: 2rem;
+    top: 15px;
+    right: 15px;
     background: #333;
-    color:white;
+    color: yellow;
     cursor: pointer;
-    font-size: 3rem;
-    padding: 0.2rem 0.8rem;
+    font-size: 50px;
+    padding: 5px 12px;
     z-index:1000; 
     display:none;
     @media only screen and (max-width: 1200px){
@@ -23,9 +24,13 @@ const Wrapper = styled(ImMenu)`
 
 
 function MenuBar() {
+    const [mobileMenu, setMobileMenu] = useState(false);
+    const toggleMenu = () => {
+        mobileMenu ? setMobileMenu(false) : setMobileMenu(true)
+    }
     return (
         <>
-            <Wrapper />
+            <Wrapper onClick={toggleMenu} />
         </>
     )
 }
