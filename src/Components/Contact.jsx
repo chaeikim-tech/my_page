@@ -11,6 +11,7 @@ const Wrapper = styled.div`
     justify-content: space-between;
     margin: 25px auto;
     height: 75vh;
+    padding: 10px;
     @media (max-width: 700px) {
         display: block;
     }
@@ -19,13 +20,13 @@ const Wrapper = styled.div`
 
 const ContactRow = styled.div`
     flex-basis: 48%;
+    padding: 40px;
     @media (max-width: 700px) {
-        padding: 20px;
+        padding: 0 40px;
     }
 `;
 
 const ContactBox = styled.div`
-    padding: 10px;
     margin-left: 20px;
 `
 
@@ -60,11 +61,13 @@ const EmailForm = styled.form`
     flex: 1 1 45rem;
     padding: 15px;
     margin: 15px;
-    margin-bottom: 50px;
+    @media (max-width: 1024px) {
+        padding:0;
+    }
     input,textarea{
         display: block;
         width:100%;
-        padding: 15px;
+        padding: 10px;
         margin: 10px 0;
         background: #3333;
         color: #fff;
@@ -72,7 +75,6 @@ const EmailForm = styled.form`
         font-size: 15px;
         resize:none;
         border: 2px solid #fff4;
-
     }
     textarea{
         height: 200px;
@@ -97,6 +99,7 @@ const Button = styled.button`
     touch-action: manipulation;
     @media (max-width: 700px) {
         font-size: 12px;
+        margin-bottom: 40px;
     }
 `
 
@@ -143,7 +146,7 @@ const Contact = () => {
                     <input type='text' name='from_name' required placeholder='Name' />
                     <input type='email' name='email' required placeholder='Email' />
                     <textarea name='message' required cols={30} rows={10} className='message' placeholder='Message' />
-                    <Button type='submit'>Send<FiSend /></Button>
+                    <Button type='submit'>Send   <FiSend /></Button>
                 </EmailForm>
             </ContactRow>
         </Wrapper>

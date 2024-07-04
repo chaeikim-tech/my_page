@@ -10,8 +10,8 @@ const Wrapper = styled.div`
     justify-content:center;
     flex-flow: column;
     min-height: 100vh;
-    padding: 10px;
     letter-spacing: 2px;
+    padding-right: 10px;
     `;
 
 const Hello = styled.h3`
@@ -24,30 +24,28 @@ const Hello = styled.h3`
     }
 `;
 
-const Name = styled.h2`
-    font-size: 30px;
-    color:#fff;
-    @media (max-width: 700px) {
-        font-size: 20px;
-    }
-`;
+
 
 const Contents = styled.div`
     font-size: 28px;
     color:#fff;
+    line-height: 1.5;
     @media (max-width: 700px) {
-        font-size: 17px;
+        font-size: 15px;
     }
 `
 
 
 const AboutButton = styled(Link)`
-    padding: 10px 25px 15px 25px;
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
     background:#333;
     color:#fff;
     cursor: pointer;
     margin-top: 10px;
-    font-size: 15px;
+    font-size: 14px;
+    font-weight: 500;
     border-radius: 50px;
     &:hover{
         background: yellow;
@@ -64,8 +62,7 @@ function Home() {
     return (
         <Wrapper id='home'>
             <Hello>안녕하세요.</Hello>
-            <Contents>끊임없는 호기심으로 새로운 지식의 탐험을 즐기는</Contents>
-            <Name>Fontend Developer 김채이 입니다.</Name>
+            <Contents>끊임없는 호기심으로 새로운 지식의 탐험을<br />즐기는 Fontend Developer 김채이 입니다.</Contents>
             <AboutButton to="about" spy={true} smooth={true} offset={-150} duration={500}>About Me<FaUser /></AboutButton>
         </Wrapper>
     )

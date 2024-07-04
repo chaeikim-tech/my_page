@@ -4,16 +4,18 @@ import { MdBusinessCenter } from "react-icons/md";
 
 
 const Wrapper = styled.div`
-    height: 90vh;
+    height: 80vh;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap; 
+    margin-bottom: 8rem;
 `;
 
 
 const CareerBox = styled.div`
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 10px 0 0 10px;
     @media (max-width: 650px) {
         flex-direction: column;
@@ -22,26 +24,30 @@ const CareerBox = styled.div`
 
 const MiniBox = styled.div`
     width: 300px;
+    height: 310px;
     margin: 40px;
-    padding-left: 40px;
+    padding: 0 40px;
     border-left: 5px solid #fff;
     position: relative;
     span {
-        font-size: 20px;
+        font-size: 16px;
+        font-weight: 500;
         background-color: #222;
         color: #fff;
         border-radius: 50px;
         padding: 10px 30px;
-        @media (max-width: 700px) {
-        font-size: 15px;
+        margin: 10px;
+        @media (max-width: 850px) {
+        font-size: 12px;
         padding: 10px 25px;
     }   
     }
     h3{
         font-size: 30px ;
+        font-weight: 500;
         color: #fff;
-        padding-top: 15px;
-        @media (max-width: 700px) {
+        padding-top: 25px;
+        @media (max-width: 850px) {
         font-size: 20px;
         }   
     }
@@ -49,7 +55,7 @@ const MiniBox = styled.div`
         font-size: 18px;
         color: #eee;
         padding: 20px 0;
-        @media (max-width: 700px) {
+        @media (max-width: 850px) {
         font-size: 14px;
         }   
     }
@@ -65,14 +71,15 @@ const MiniBox = styled.div`
         text-align: center;
         color: #fff;
         background-color: #FDA403;
-        @media (max-width: 700px) {
+        @media (max-width: 850px) {
         height: 45px;
         width: 45px;
         }
     }
-    @media (max-width: 700px) {
+    @media (max-width: 850px) {
         flex-basis: 100%;
         margin: 40px;
+        height: 200px;
     }   
 `
 
