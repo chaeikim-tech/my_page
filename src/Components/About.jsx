@@ -8,7 +8,6 @@ const Wrapper = styled.div`
     align-items: center;
     justify-content: center;
     flex-wrap: wrap; 
-    margin-bottom: 8rem;
 `;
 
 

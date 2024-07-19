@@ -50,10 +50,8 @@ table {
   border-spacing: 0;
 }
 * {
-  font-family: "Noto Sans KR", sans-serif;
   box-sizing: border-box;
   transition: all .2s linear;
-  text-transform: capitalize;
   scroll-behavior: smooth;
 }
 body {
